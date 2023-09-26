@@ -1252,6 +1252,7 @@ pre code {
     }
     .col-md-10 {
         width: 83.33333%;
+        font-size: larger;
     }
     .col-md-11 {
         width: 91.66667%;
@@ -3825,7 +3826,7 @@ tbody.collapse.in {
 }
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover {
-    color: #333;
+    color: #ff5e00;
     background-color: transparent;
 }
 .navbar-default .navbar-nav > .active > a,
@@ -3922,7 +3923,7 @@ fieldset[disabled] .navbar-default .btn-link:hover {
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus,
 .navbar-inverse .navbar-nav > li > a:hover {
-    color: #f27202; /*index nav-bar hover*/
+    color: #ff5e00; /*index nav-bar hover*/
     background-color: transparent;
 }
 .navbar-inverse .navbar-nav > .disabled > a,
@@ -5152,12 +5153,13 @@ textarea {
     font-weight: 400;
     color: #34495e;
     padding: 0;
-    font-size: 30px;
+    font-size: 40px;
 }
 .template-example .template-title-example:after,
 .template-example .template-title-example:before {
     display: none;
 }
+
 .template-example .table > tbody > tr > td,
 .template-example .table > tbody > tr > th,
 .template-example .table > tfoot > tr > td,
@@ -5177,3 +5179,7 @@ textarea {
     margin-right: 5px;
 }
 /*# sourceMappingURL=main.70a66962.map*/
+
+.general-content {
+    font-size: 13px;
+}
