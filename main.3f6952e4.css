@@ -5196,59 +5196,62 @@ div#columns figure {
     /* margin: 0 2px 15px; */
     /* padding: 15px; */
     /* padding-bottom: 10px; */
-    transition: opacity 0.4s ease-in-out;
+    /* transition: opacity 0.4s ease-in-out; */
     display: inline-block;
 }
 
-div#columns figure img {
-    width: 100%;
-    height: auto;
-    border: none;
+figure {
+    position: relative;
+    overflow: hidden;
 }
 
-div#columns figure::after {
+figure img {
+    width: 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+figure:hover img {
+    transform: scale(1.1);
+}
+
+figure::after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0);
-    transition: background-color 0.4s ease-in-out;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.4s ease-in-out;
 }
 
-div#columns figure::before {
-    content: attr(data-info);
+figure:hover::after {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+figure .hover-text {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-}
-
-div#columns figure:hover::after {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-  
-  div#columns figure:hover::before {
-    opacity: 1;
-}
-
-div#columns figure .hover-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 100%;
     color: white;
+    top: 50%;
+    left: 50%;
     opacity: 0;
-    transition: 0.4s ease-in-out;
-  }
-  
-  div#columns figure:hover .hover-text {
+    transform: translate(-50%, -50%);
+    transition: opacity 0.4s ease-in-out;
+    text-align: center;
+    z-index: 2;
+}
+
+figure:hover .hover-text {
     opacity: 1;
-  }
+}
+
+div#columns figure img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border: none;
+}
 
 div#columns small {
     font-size: 1rem;
