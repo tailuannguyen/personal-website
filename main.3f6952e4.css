@@ -5268,3 +5268,11 @@ div#columns small {
         width: 100%;
     }
 }
+
+.font-size-13 {
+    font-size: 13px;
+}
+
+.font-size-12 {
+    font-size: 12px;
+}
